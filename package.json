@@ -1,0 +1,36 @@
+{
+    "name": "chat-app",
+    "version": "1.0.0",
+    "description": "MERN Stack Based Chat Application",
+    "main": "server.js",
+    "scripts": {
+        "client-install": "npm install --prefix client",
+        "start": "node server.js",
+        "server": "nodemon server.js",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Dave Howson",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "concurrently": "^4.1.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "http": "0.0.0",
+        "is-empty": "^1.2.0",
+        "jsonwebtoken": "^8.5.1",
+        "mongoose": "^5.5.15",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "socket.io": "^2.2.0",
+        "validator": "^11.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "eslint-plugin-react": "^7.13.0",
+        "eslint-plugin-react-hooks": "^1.6.0",
+        "nodemon": "^1.19.1"
+    }
+}
